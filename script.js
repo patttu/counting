@@ -1,17 +1,22 @@
-countL=0
-
-function add(){
-    countL+=1
-    document.getElementById("count").innerHTML=(countL)
+body{
+    background-color: black;
+    color:aliceblue;
 }
 
-function sub(){
-    countL=1
-    document.getElementById("count").innerHTML=(countL)
+#count{
+    font-size:100px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-sv = " "
-function save(){
-    sv= sv+ countL +"-"
-    document.getElementById("sv").innerHTML=sv
+.btn{
+    font-size:50px;
+    margin:3px;
+}
+
+.res{
+    margin-top:6px;;
+    background-color: brown;
+    border-radius: 20px;
+    border-color: brown;
+    color: aliceblue;
 }
