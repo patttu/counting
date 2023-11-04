@@ -1,22 +1,29 @@
-body{
-    background-color: black;
-    color:aliceblue;
+countL=0
+
+function add(){
+    countL+=1
+    document.getElementById("count").innerHTML=(countL)
 }
 
-#count{
-    font-size:100px;
-    font-family: 'Courier New', Courier, monospace;
+function sub(){
+    countL-=1
+    document.getElementById("count").innerHTML=(countL)
 }
 
-.btn{
-    font-size:50px;
-    margin:3px;
+sv = " "
+function save(){
+    sv= sv+ countL +"-"
+    document.getElementById("sv").innerHTML=sv
+    countL=0
+    document.getElementById("count").innerHTML=(countL)
+
+
 }
 
-.res{
-    margin-top:6px;;
-    background-color: brown;
-    border-radius: 20px;
-    border-color: brown;
-    color: aliceblue;
+function reset(){
+countL=0
+sv=" "
+document.getElementById("count").innerHTML=(countL)
+document.getElementById("sv").innerHTML=sv
+
 }
