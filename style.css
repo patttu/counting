@@ -10,4 +10,13 @@ body{
 
 .btn{
     font-size:50px;
+    margin:3px;
+}
+
+.res{
+    margin-top:6px;;
+    background-color: brown;
+    border-radius: 20px;
+    border-color: brown;
+    color: aliceblue;
 }
